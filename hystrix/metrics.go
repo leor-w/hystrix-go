@@ -23,6 +23,7 @@ type metricExchange struct {
 	metricCollectors []metricCollector.MetricCollector
 }
 
+// newMetricExchange 创建指标统计
 func newMetricExchange(name string) *metricExchange {
 	m := &metricExchange{}
 	m.Name = name

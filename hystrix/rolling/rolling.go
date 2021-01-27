@@ -5,8 +5,7 @@ import (
 	"time"
 )
 
-// Number tracks a numberBucket over a bounded number of
-// time buckets. Currently the buckets are one second long and only the last 10 seconds are kept.
+// Number 在有限数量的时间桶上跟踪numberBucket。目前，桶的长度为1秒，只保留最后10秒。
 type Number struct {
 	Buckets map[int64]*numberBucket
 	Mutex   *sync.RWMutex
